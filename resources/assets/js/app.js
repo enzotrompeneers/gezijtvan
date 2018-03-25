@@ -1,9 +1,10 @@
 
-import $ from "jquery";
+
 
 $('#test').click(function() {
     console.log('test');
 })
+
 
 /**
  * First we will load all of this project's JavaScript dependencies which

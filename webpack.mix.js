@@ -1,8 +1,8 @@
 let mix = require('laravel-mix');
 
 mix.autoload({jquery: ['$', 'window.jQuery']})
-	.babel('resources/assets/js/app.js', 'public/js')
-	.sass('resources/assets/sass/app.scss', 'public/css')
+	.js('resources/assets/js/app.js', 'js')
+	.sass('resources/assets/sass/app.scss', 'css')
 	.options({
 		postCss: [
 			require('postcss-sorting')({
@@ -10,3 +10,7 @@ mix.autoload({jquery: ['$', 'window.jQuery']})
 			})
 		]
 	})
+	.browserSync({
+		proxy: 'gezijtvan.test/',
+		port: 8000
+	});

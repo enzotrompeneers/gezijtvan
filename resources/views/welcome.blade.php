@@ -25,6 +25,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+                <p>test</p>
                 <button id="test">button</button>
             </div>
         </div>

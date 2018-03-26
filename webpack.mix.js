@@ -13,4 +13,5 @@ mix.autoload({jquery: ['$', 'window.jQuery']})
 	.browserSync({
 		proxy: 'gezijtvan.test/',
 		port: 8000
-	});
+	})
+	.version();

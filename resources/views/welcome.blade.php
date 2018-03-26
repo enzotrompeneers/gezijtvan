@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Ge zijt van</title>
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ mix('/css/app.css') }}" rel="stylesheet" type="text/css" >
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -29,6 +29,6 @@
                 <button id="test">button</button>
             </div>
         </div>
-        <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+        <script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
     </body>
 </html>

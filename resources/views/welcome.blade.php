@@ -23,9 +23,17 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    {{ $title }}
                 </div>
-                <p>test</p>
+
+                <ul>
+                    @foreach ($users as $user)
+                        <li>{{ $user }}</li>
+                    @endforeach
+                </ul>
+                
+                
+                
                 <button id="test">button</button>
             </div>
         </div>
